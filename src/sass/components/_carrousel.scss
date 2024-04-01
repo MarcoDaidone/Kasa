@@ -1,0 +1,35 @@
+.wrapper_carrousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    img {
+width: auto;
+border-radius: 10px;
+    }
+    button {
+        background: none;
+        border: none;
+    }
+    svg {
+        font-size: 20px;
+        fill: white;
+    }
+    button:nth-child(3){
+position: absolute;
+top: 50%;
+right: 5px; 
+margin-top: -10px;
+    }
+    button:first-child{
+        position: absolute;
+        top: 50%;
+        left: 5px; 
+        margin-top: -10px;
+            }
+            .tags {
+                background: $primary-color;
+                color: white;
+                padding: 2px 20px;
+
+            }
+}

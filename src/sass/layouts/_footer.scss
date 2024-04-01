@@ -1,0 +1,27 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  img {
+    width: 122px;
+    margin: 0px auto;
+    height: auto;
+  }
+  p {
+      margin: 0px auto;
+      max-width: 155px;
+      text-align: center;
+      margin-top: 16px;
+  }
+}
+@media (min-width:768px ) {
+  .footer {
+    p {
+        max-width: unset;
+    }
+  }
+}

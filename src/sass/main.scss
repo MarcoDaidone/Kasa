@@ -1,0 +1,23 @@
+
+@import './abstracts/variables.scss';
+@import './components/carrousel';
+@import './components/dropDown';
+@import './pages/about.scss'; 
+@import './pages/home.scss';
+@import './pages/fiche_produit.scss';
+@import './layouts/footer';
+@import './layouts/nav.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
