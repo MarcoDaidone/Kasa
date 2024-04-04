@@ -21,12 +21,12 @@ const DropDown = ({ title, content }) => {
                 <div
                 className="content"
                   style={{
-                    height: isOpen ? 100 : 0,
+                    height: isOpen ? 150 : 0,
                     transition: 'height 0.5s ease-in-out',
                     overflow: 'auto',
                 }}
                 >
-                   {content}
+                    <p>{content}</p>
                 </div>
         </div>
     );

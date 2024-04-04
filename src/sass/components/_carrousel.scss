@@ -2,10 +2,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    img {
-width: auto;
-border-radius: 10px;
-    }
+    min-height: 255px;
+    border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
     button {
         background: none;
         border: none;
@@ -14,7 +15,7 @@ border-radius: 10px;
         font-size: 20px;
         fill: white;
     }
-    button:nth-child(3){
+    button:nth-child(2){
 position: absolute;
 top: 50%;
 right: 5px; 
@@ -26,10 +27,9 @@ margin-top: -10px;
         left: 5px; 
         margin-top: -10px;
             }
-            .tags {
-                background: $primary-color;
-                color: white;
-                padding: 2px 20px;
-
-            }
+}
+@media (min-width:768px) {
+   .wrapper_carrousel {
+    min-height: 415px;
+   }
 }

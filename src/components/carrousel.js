@@ -15,9 +15,8 @@ const Carrousel = ({ images }) => {
   };
 
   return (
-    <div className='wrapper_carrousel'>
+    <div className='wrapper_carrousel' style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
     <button onClick={previousSlide}><MdArrowForwardIos height={24} style={{ transform: 'rotate(180deg)'}} /></button>
-    <img src={images[currentImageIndex]} alt={`Slide ${currentImageIndex + 1}`} />
     <button onClick={nextSlide}><MdArrowForwardIos height={24} /></button>
   </div>
   );

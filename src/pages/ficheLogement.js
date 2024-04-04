@@ -5,40 +5,43 @@ import DropDown from '../components/dropDown';
 import { useParams } from 'react-router-dom';
 import data from '../data/data'
 import Rating from '../components/rating';
+import QuatreCentQuatre from './quatreCentquatre';
 
 
 const FicheLogement = () => {
   let id = useParams().id;
+const dataId = data.find(item => item.id === id);
 
+  if (dataId){
   return (
     <div>
       <Layout>
         <div className='wrapper_fiche'>
-     {data.map((item, index) => (
-  (item.id === id) ? (
-    <><Carrousel images={item.pictures} />
-    <div className='infos' key={item.id}>
-      <p className='item_description'>{item.title}</p>
-      <span className='localisation'>{item.location}</span>
+    <><Carrousel images={dataId.pictures} />
+    <div className='infos' key={dataId.id}>
+      <div className='wrap_info_2'>
+      <p className='item_description'>{dataId.title}</p>
+      <span className='localisation'>{dataId.location}</span>
       <span className='tags'>
-        {item.tags.map ((item)=> (
+        {dataId.tags.map ((item)=> (
       <span>{item}</span>
         ))}
         </span>
       <div className='wrap_ri'>
-        <span><Rating rating={item.rating} /></span>
-        <span><img src={item.host.picture}/><p>{item.host.name}</p> </span>
-      </div>
-      <DropDown title={"Description"} content={item.description} />
-     <DropDown title={"Équipements"} content={item.equipments.map((item)=>(<span>{item}</span>))}/>
-    </div>
+        <span><Rating rating={dataId.rating} /></span>
+        <span><img src={dataId.host.picture}/><p>{dataId.host.name}</p> </span>
+      </div></div>
+      <div className='wrap_dpd'>
+      <DropDown title={"Description"} content={dataId.description} />
+     <DropDown title={"Équipements"} content={dataId.equipments.map((item)=>(<span>{item}</span>))}/>
+     </div></div>
     </>
-  ) : null
-))}
      </div>
       </Layout>
     </div>
   );
-}
+}else {
+  return <QuatreCentQuatre />
+}}
 
 export default FicheLogement;

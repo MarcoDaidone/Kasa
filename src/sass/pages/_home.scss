@@ -1,5 +1,5 @@
 .wraper {
-  max-width: 1280px;
+  max-width: 1240px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -10,9 +10,11 @@
   display: flex;
   flex-direction: column;
   gap:22px;
+  a {
+    margin: auto;
+  }
 }
 .hero {
-  background-image: url(../../img/background.png);
   display: flex;
   justify-self: center;
   width: auto;

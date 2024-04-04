@@ -1,0 +1,30 @@
+.quatre_page {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 10% 30% 10%;
+    min-height: 430px;
+    img {
+        width: 198px;
+        height: auto;
+        margin: auto;
+    }
+    p {
+        color: $primary-color;
+        text-align: center;
+        font-size: 18px;
+    }
+    a {
+        text-align: center;
+        color: black;
+    }
+
+}
+@media (min-height:768px){
+    .quatre_page {
+    img {
+        width: 597px;
+    }
+    p {
+        font-size: 36px;
+    }}
+}

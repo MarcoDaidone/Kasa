@@ -1,6 +1,8 @@
 @import '../abstracts/variables';
 
 .wrapper_fiche {
+    max-width: 1240px;
+    margin: auto;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
@@ -56,3 +58,58 @@
     }
 }
 }
+
+@media (min-width:768px) {
+    .wrapper_fiche {
+        .wrap_dpd {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .wrap_info_2 {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .tags {
+          width: 100%;
+          margin-top: 20px;
+            span {
+                font-size: 14px;
+                padding: 3px 40px 2px 40px;
+            }
+        }
+        
+        .infos p {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .wrap_ri {
+            flex-direction: column-reverse;
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            margin-top: 0px;
+            p {
+                font-size: 18px;
+            }
+            img {
+                width:64px;
+                height:64px;
+            }
+            >span:nth-child(2){
+                margin-top: 0px;
+            }
+            >span {
+                display: flex;
+                flex-direction: row;
+                gap: 4px; 
+                margin-top: auto;
+                margin-left: auto;
+                svg {
+                    font-size: 24px;
+                }
+            }
+        }
+       
+    }
+ }
