@@ -7,8 +7,8 @@ const Nav = () => {
     <div className='nav'>
 <img src={logo}/>
 <nav>
-    <NavLink exact activeClassName="active" to='/'>Accueil</NavLink>
-    <NavLink exact activeClassName="active" to='/a_propos'>A Propos</NavLink>
+    <NavLink to='/'>Accueil</NavLink>
+    <NavLink to='/a_propos'>A Propos</NavLink>
 </nav>
     </div>
   );
