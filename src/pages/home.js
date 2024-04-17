@@ -9,7 +9,7 @@ import bg from '../img/background.png';
 
 const Home = (title,image) => {
   return (
-    <div>
+    <div style={{position:"relative", paddingBottom:"300px"}}>
       <Layout>
         <div className='wraper'>
        <Hero title={"Chez vous, partout et ailleurs"} image={bg}/>

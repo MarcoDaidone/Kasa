@@ -12,9 +12,9 @@ const FicheLogement = () => {
   let id = useParams().id;
   const dataId = data.find(item => item.id === id);
 
-  if (false === dataId){
+  if (!dataId){
     return (
-    <QuatreCentQuatre/>
+      <QuatreCentQuatre/>
     );
   }
 

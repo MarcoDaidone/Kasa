@@ -13,6 +13,11 @@
         line-height: 25px;
         margin-bottom: 3px;
 }
+.wrap_dpd {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .localisation {
     font-size: 22px;
     line-height: 20px;
@@ -61,11 +66,7 @@
 
 @media (min-width:768px) {
     .wrapper_fiche {
-        .wrap_dpd {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+       
         .wrap_info_2 {
             position: relative;
             margin-bottom: 40px;
